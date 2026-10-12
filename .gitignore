@@ -60,3 +60,12 @@ Thumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Local secrets / environment
+.env
+.env.*
+!.env.example
+
+# AI / IDE generated project artifacts
+.kiro/
+TASK_*_SUMMARY.md
