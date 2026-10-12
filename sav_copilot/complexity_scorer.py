@@ -4,7 +4,6 @@ Complexity Scorer Module
 This module calculates a complexity score based on data quality, prediction confidence,
 and warranty status. It helps prioritize cases for quick resolution vs. expert review.
 
-**Validates: Requirements 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 7.7, 7.8, 7.9, 7.10, 7.11, 7.12**
 """
 
 import logging
@@ -48,7 +47,6 @@ class ComplexityScorer:
         """
         Calculate complexity score and assign priority.
 
-        **Validates: Requirements 7.10, 7.11, 7.12**
 
         Args:
             analysis_result: Dictionary containing:
@@ -123,7 +121,6 @@ class ComplexityScorer:
         """
         Score based on input quality.
 
-        **Validates: Requirements 7.1, 7.9**
 
         Scoring rules:
         - +2: Important data missing (unusable quality)
@@ -167,7 +164,6 @@ class ComplexityScorer:
         """
         Score based on prediction confidence.
 
-        **Validates: Requirements 7.4, 7.5, 7.6, 7.8**
 
         Scoring rules:
         - +1: Solution confidence < 0.5 (low confidence)
@@ -227,7 +223,6 @@ class ComplexityScorer:
         """
         Score based on warranty uncertainty.
 
-        **Validates: Requirements 7.3**
 
         Scoring rules:
         - +2: Warranty status is "incertaine"
@@ -255,7 +250,6 @@ class ComplexityScorer:
         """
         Score based on overall case clarity.
 
-        **Validates: Requirements 7.6, 7.7**
 
         Scoring rules:
         - -1: Solution confidence > 0.8 (high confidence)
