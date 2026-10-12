@@ -56,7 +56,6 @@ class InputQualityAnalyzer:
         """
         Flag if description is too short.
 
-        **Validates: Requirements 5.1**
 
         Args:
             text: Description text to check
@@ -83,7 +82,6 @@ class InputQualityAnalyzer:
         """
         Flag if attachments are missing.
 
-        **Validates: Requirements 5.2**
 
         Args:
             attachments: List of attachment filenames
@@ -108,7 +106,6 @@ class InputQualityAnalyzer:
         """
         Flag if description is too vague (fewer than minimum meaningful words).
 
-        **Validates: Requirements 5.3**
 
         Meaningful words are defined as words that are:
         - At least 2 characters long
@@ -175,7 +172,6 @@ class InputQualityAnalyzer:
         """
         Analyze input quality and return status + issues.
 
-        **Validates: Requirements 5.4, 5.5**
 
         This method performs all quality checks and determines an overall
         usability status:
