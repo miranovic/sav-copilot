@@ -1,7 +1,7 @@
 # SAV Copilot
 
 > AI-powered decision-support system for after-sales complaint qualification.  
-> Built from a real Atlantem / HERIGE use case during the AI for Business Hackathon at Centrale Nantes.
+> Winner project built from a real Atlantem / HERIGE use case during the AI for Business Hackathon at Centrale Nantes.
 
 SAV Copilot is a **hybrid ML + business-rules + human-in-the-loop** prototype designed to help an after-sales team pre-qualify customer complaints faster without removing human control from uncertain or sensitive cases.
 
@@ -127,7 +127,7 @@ The output remains deliberately cautious: the engine provides an indicative stat
 - Human-in-the-loop routing
 - Contextual customer-message suggestions
 - Streamlit operator interface
-- Demo and verification scripts
+- End-to-end demo script
 - Unit / pipeline tests
 
 ---
