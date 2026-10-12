@@ -4,7 +4,6 @@ Pipeline Module
 This module orchestrates the complete analysis pipeline for SAV Copilot.
 It coordinates all components to analyze a reclamation and return a complete result.
 
-**Validates: Requirements 11.1, 11.2, 11.3, 11.4, 12.2, 12.3**
 """
 
 import logging
@@ -96,7 +95,6 @@ def analyze_reclamation(
     """
     Orchestrate complete analysis of a reclamation.
 
-    **Validates: Requirements 11.1, 11.2, 11.3, 11.4, 12.2, 12.3**
 
     This function:
     1. Loads models if available, otherwise triggers training (if trainer provided)
