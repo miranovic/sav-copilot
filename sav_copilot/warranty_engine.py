@@ -4,7 +4,6 @@ Warranty Engine Module
 This module implements business rules to assess probable warranty eligibility
 based on text pattern matching for common warranty exclusions.
 
-**Validates: Requirements 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 6.7, 6.8**
 """
 
 import re
