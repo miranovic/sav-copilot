@@ -4,7 +4,6 @@ Streamlit UI for SAV Copilot
 This module provides the web interface for demonstrating the SAV Copilot system.
 It allows operators to analyze customer complaints and view complete analysis results.
 
-**Validates: Requirements 10.1, 10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8**
 """
 
 import streamlit as st
@@ -53,7 +52,6 @@ def display_sidebar(trainer: Optional[ModelTrainer]) -> Dict[str, Any]:
     """
     Display sidebar with configuration options.
 
-    **Validates: Requirement 10.1 (configuration options)**
 
     Args:
         trainer: ModelTrainer instance or None
@@ -125,7 +123,6 @@ def get_reclamation_input() -> Optional[Dict[str, Any]]:
     """
     Display input section for reclamation data.
 
-    **Validates: Requirements 10.1 (input section), 10.1 (text area), 10.1 (file uploader)**
 
     Returns:
         Dictionary with reclamation data, or None if incomplete
@@ -519,7 +516,6 @@ def display_predictions(predictions: Dict[str, Any], show_confidence: bool):
     """
     Display prediction results with confidence scores.
 
-    **Validates: Requirements 10.2, 10.3**
 
     Args:
         predictions: Prediction results from pipeline
@@ -621,7 +617,6 @@ def display_quality(quality: Dict[str, Any]):
     """
     Display quality assessment results.
 
-    **Validates: Requirement 10.6**
 
     Args:
         quality: Quality assessment from pipeline
@@ -672,7 +667,6 @@ def display_warranty(warranty: Dict[str, Any]):
     """
     Display warranty evaluation results.
 
-    **Validates: Requirement 10.4**
 
     Args:
         warranty: Warranty evaluation from pipeline
@@ -715,7 +709,6 @@ def display_complexity(complexity: Dict[str, Any], show_details: bool):
     """
     Display complexity score and priority.
 
-    **Validates: Requirement 10.5**
 
     Args:
         complexity: Complexity score from pipeline
@@ -775,7 +768,6 @@ def display_message(message: Optional[str]):
     """
     Display generated customer message.
 
-    **Validates: Requirement 10.7**
 
     Args:
         message: Generated message from pipeline
@@ -801,7 +793,6 @@ def display_results(result: Any, config: Dict[str, Any]):
     """
     Display complete analysis results.
 
-    **Validates: Requirement 10.8 (clear, professional layout)**
 
     Args:
         result: AnalysisResult from pipeline
@@ -844,7 +835,6 @@ def main():
     """
     Main application entry point.
 
-    **Validates: Requirements 10.1, 10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8**
     """
     # Page configuration
     st.set_page_config(
