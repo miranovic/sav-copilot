@@ -4,7 +4,6 @@ Message Generator Module
 This module generates contextual customer messages based on analysis results.
 Messages are in French, professional, and avoid making definitive legal warranty decisions.
 
-**Validates: Requirements 8.1, 8.2, 8.3, 8.4, 8.5**
 """
 
 import logging
@@ -39,7 +38,6 @@ class MessageGenerator:
         """
         Generate appropriate customer message based on analysis.
 
-        **Validates: Requirements 8.1, 8.2, 8.3**
 
         Message selection logic:
         1. If input quality is poor/unusable -> need_more_info message
@@ -103,7 +101,6 @@ class MessageGenerator:
         """
         Generate message requesting additional information.
 
-        **Validates: Requirements 8.1, 8.4**
 
         This message is used when input quality is poor or unusable.
         It requests specific information based on detected issues.
@@ -155,7 +152,6 @@ Service Après-Vente"""
         """
         Generate message about probable warranty exclusion.
 
-        **Validates: Requirements 8.2, 8.4, 8.5**
 
         This message informs the customer that their situation may not be covered
         by warranty, while being careful to avoid making definitive legal decisions.
@@ -192,7 +188,6 @@ Service Après-Vente"""
         """
         Generate reassurance message for quick-win cases.
 
-        **Validates: Requirements 8.3, 8.4**
 
         This message is used for clear, simple cases that can be processed quickly.
         It reassures the customer that their case is being handled efficiently.
